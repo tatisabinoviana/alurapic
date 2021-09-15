@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'aluraPic';
+  description = 'leão';
+  url = 'https://www.maboroshinosake.com/sake/beer/wp-content/uploads/sites/4/2018/11/lion-beer1.jpg';
 }
