@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PhotoService } from './photos/photo/photo.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'aluraPic';
-  description = 'leão';
-  url = 'https://www.maboroshinosake.com/sake/beer/wp-content/uploads/sites/4/2018/11/lion-beer1.jpg';
+export class AppComponent implements OnInit{
+  
+  photos: any[] = [];
+  
+  constructor(private photoSrevice: PhotoService) {}
+  
+  ngOnInit(): void {
+    this.photoSrevice
+      .listFromUser('flavio')
+      .subscribe(photos => this.photos = photos);
+  }
+
 }
