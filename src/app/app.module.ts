@@ -1,3 +1,4 @@
+import { ErrorsModule } from './errors/errors.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app.routing.module';
   imports: [
     BrowserModule,
     PhotosModule, 
-    AppRoutingModule
+    AppRoutingModule, 
+    ErrorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
