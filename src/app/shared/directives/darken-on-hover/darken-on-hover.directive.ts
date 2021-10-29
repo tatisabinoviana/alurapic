@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, Input, Renderer, Renderer2 } from "@angular/core";
+import { Directive, ElementRef, HostListener, Input, Renderer } from "@angular/core";
 
 @Directive ({
   selector: '[apDarkenOnHover]'
