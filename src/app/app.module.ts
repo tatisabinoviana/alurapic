@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { ErrorsModule } from './errors/errors.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,8 @@ import { AppRoutingModule } from './app.routing.module';
     PhotosModule, 
     AppRoutingModule, 
     ErrorsModule, 
-    HomeModule
+    HomeModule, 
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
