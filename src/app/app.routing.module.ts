@@ -1,3 +1,4 @@
+import { AuthGuard } from './core/auth/auth.guard';
 import { SignInComponent } from './home/signin/signin.component';
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
@@ -10,7 +11,8 @@ import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 const routes: Routes = [
   { 
     path: '', 
-    component: SignInComponent 
+    component: SignInComponent,
+    canActivate: [AuthGuard] 
   },
   { 
     path: 'user/:userName', 
