@@ -10,6 +10,6 @@ export class SignUpService {
 
   checkUserNameTaken(userName: string) {
 
-    return this.http.get(API_URL + 'user/exists/' + userName);
+    return this.http.get(API_URL + '/user/exists/' + userName);
   }
 }
